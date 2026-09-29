@@ -1,0 +1,64 @@
+{
+  "entities": {
+    "SharedSystem": {
+      "title": "SharedSystem",
+      "description": "Shared application state containing employees database, audit logs, and live active user presence",
+      "type": "object",
+      "properties": {
+        "employees": {
+          "type": "array",
+          "description": "List of faculty employees with real-time balance tracking"
+        },
+        "updatedAt": {
+          "type": "string",
+          "description": "ISO timestamp of the last database modification"
+        },
+        "updatedBy": {
+          "type": "string",
+          "description": "User name who performed the latest mutation"
+        },
+        "updatedByRole": {
+          "type": "string",
+          "description": "Role of the user (admin or assistant)"
+        }
+      }
+    },
+    "Presence": {
+      "title": "Presence",
+      "description": "Live session status for preventing edit conflicts between Admin and Assistant",
+      "type": "object",
+      "properties": {
+        "userId": {
+          "type": "string",
+          "description": "User ID (admin or assistant)"
+        },
+        "userName": {
+          "type": "string",
+          "description": "User display name"
+        },
+        "role": {
+          "type": "string",
+          "description": "Role (admin or assistant)"
+        },
+        "lastActive": {
+          "type": "string",
+          "description": "ISO timestamp of heartbeat"
+        },
+        "currentEditingEmployeeId": {
+          "type": "number",
+          "description": "ID of employee currently being edited if any"
+        }
+      }
+    }
+  },
+  "firestore": {
+    "/system/sharedData": {
+      "schema": "SharedSystem",
+      "description": "Unified live employees database and updates"
+    },
+    "/presence/{userId}": {
+      "schema": "Presence",
+      "description": "Live active sessions for conflict warning and prevention"
+    }
+  }
+}

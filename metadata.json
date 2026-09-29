@@ -1,0 +1,6 @@
+{
+  "name": "منصة تسيير عطل المستخدمين - كلية الرياضيات وعلوم المادة",
+  "description": "المنصة الداخلية لتسيير ومتابعة عطل ومداومات الموظفين الإداريين والتقنيين بكلية الرياضيات وعلوم المادة - جامعة قاصدي مرباح ورقلة",
+  "requestFramePermissions": ["camera"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

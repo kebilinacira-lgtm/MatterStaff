@@ -1,0 +1,86 @@
+@import "tailwindcss";
+
+@layer base {
+  @page {
+    size: A4 portrait;
+    margin: 8mm 10mm 8mm 10mm;
+  }
+}
+
+@media print {
+  @page {
+    size: A4 portrait;
+    margin: 8mm 10mm 8mm 10mm;
+  }
+
+  html, body {
+    background: #ffffff !important;
+    color: #000000 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    width: 100% !important;
+    height: auto !important;
+    overflow: visible !important;
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+
+  /* Hide all application chrome, navigation, headers, footers */
+  header, footer, nav, aside, .no-print, [class*="print:hidden"] {
+    display: none !important;
+  }
+
+  /* Reset all modal containers so they don't clip */
+  body > div,
+  #root,
+  .fixed,
+  .overflow-y-auto,
+  .overflow-hidden,
+  .backdrop-blur-xs,
+  .shadow-2xl {
+    position: static !important;
+    overflow: visible !important;
+    max-height: none !important;
+    height: auto !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    border: none !important;
+    box-shadow: none !important;
+    background: transparent !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    filter: none !important;
+  }
+
+  .print-area-container {
+    visibility: visible !important;
+    display: block !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: 0 auto !important;
+    padding: 0 !important;
+    overflow: visible !important;
+    max-height: none !important;
+    background: #ffffff !important;
+  }
+
+  .print-area-container * {
+    visibility: visible !important;
+  }
+
+  .print-area-container img {
+    visibility: visible !important;
+    max-width: 100% !important;
+    display: block !important;
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+
+  .print-area-container svg {
+    visibility: visible !important;
+    max-width: 100% !important;
+    display: block !important;
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+}

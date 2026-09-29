@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <script>
+      // Safe patch for environments/iframes where window.fetch has only a getter
+      (function() {
+        try {
+          var _fetch = window.fetch;
+          var customFetch = _fetch;
+          Object.defineProperty(window, 'fetch', {
+            get: function() {
+              return customFetch;
+            },
+            set: function(val) {
+              customFetch = val;
+            },
+            configurable: true,
+            enumerable: true
+          });
+          if (typeof Window !== 'undefined' && Window.prototype) {
+            try {
+              Object.defineProperty(Window.prototype, 'fetch', {
+                get: function() {
+                  return customFetch;
+                },
+                set: function(val) {
+                  customFetch = val;
+                },
+                configurable: true,
+                enumerable: true
+              });
+            } catch (protoErr) {}
+          }
+        } catch (e) {
+          console.warn('Safe fetch patch applied with notice:', e);
+        }
+      })();
+    </script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#065f46" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <meta name="apple-mobile-web-app-title" content="إدارة العطل" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" href="/pwa-192x192.png" />
+    <title>منصة تسيير عطل المستخدمين - كلية الرياضيات وعلوم المادة</title>
+    <meta name="description" content="المنصة الداخلية لتسيير ومتابعة عطل ومداومات الموظفين الإداريين والتقنيين بكلية الرياضيات وعلوم المادة - جامعة قاصدي مرباح ورقلة" />
+    <meta property="og:title" content="منصة تسيير عطل المستخدمين - كلية الرياضيات وعلوم المادة" />
+    <meta property="og:description" content="المنصة الداخلية لتسيير ومتابعة عطل ومداومات الموظفين الإداريين والتقنيين بكلية الرياضيات وعلوم المادة - جامعة قاصدي مرباح ورقلة" />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400;1,700&family=Cairo:wght@400;500;600;700;800;900&family=Tajawal:wght@400;500;700&display=swap" rel="stylesheet">
+  </head>
+  <body class="bg-slate-50 text-slate-900 font-['Cairo',sans-serif] antialiased">
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
+

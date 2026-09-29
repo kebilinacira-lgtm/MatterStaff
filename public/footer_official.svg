@@ -1,0 +1,132 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 850 120" width="100%" height="100%">
+  <defs>
+    <style>
+      .txt-ar { font-family: 'Amiri', 'Times New Roman', serif; font-weight: bold; }
+      .txt-sans { font-family: Arial, Helvetica, sans-serif; font-weight: bold; }
+    </style>
+  </defs>
+
+  <!-- Outer Rectangular Frame -->
+  <rect x="1" y="1" width="848" height="118" fill="#ffffff" stroke="#000000" stroke-width="2" />
+
+  <!-- Upper Section: Left side Logos (Exact 1:1 Color Replica of User's Uploaded Image) -->
+  <g transform="translate(14, 4)">
+    
+    <!-- 1. Intertek ISO 9001:2015 Globe Badge -->
+    <g transform="translate(4, 0)">
+      <!-- Arched text ISO 9001:2015 -->
+      <path id="isoCurveTop" d="M 6,21 A 23,23 0 0,1 46,21" fill="none" />
+      <text font-size="6.5" font-weight="900" font-family="Arial, Helvetica, sans-serif" text-anchor="middle" fill="#231f20">
+        <textPath href="#isoCurveTop" startOffset="50%">ISO 9001:2015</textPath>
+      </text>
+
+      <!-- Circular Outer Rings / Arc segments -->
+      <path d="M 6,24 A 23,23 0 0,0 6,48" fill="none" stroke="#231f20" stroke-width="2.6" stroke-linecap="round" />
+      <path d="M 46,24 A 23,23 0 0,1 46,48" fill="none" stroke="#231f20" stroke-width="2.6" stroke-linecap="round" />
+
+      <!-- Globe Center Circle -->
+      <circle cx="26" cy="35" r="14.5" fill="none" stroke="#231f20" stroke-width="1.8" />
+      <!-- Globe Meridian Vertical Ellipse -->
+      <ellipse cx="26" cy="35" rx="7" ry="14.5" fill="none" stroke="#231f20" stroke-width="1.5" />
+      <!-- Globe Center Vertical Line -->
+      <line x1="26" y1="20.5" x2="26" y2="49.5" stroke="#231f20" stroke-width="1.5" />
+      <!-- Globe Equator Horizontal Line -->
+      <line x1="11.5" y1="35" x2="40.5" y2="35" stroke="#231f20" stroke-width="1.5" />
+      <!-- Globe Latitude Parallel Lines -->
+      <line x1="14" y1="28" x2="38" y2="28" stroke="#231f20" stroke-width="1.2" />
+      <line x1="14" y1="42" x2="38" y2="42" stroke="#231f20" stroke-width="1.2" />
+
+      <!-- Arched bottom text CERTIFICATION -->
+      <path id="certCurveBottom" d="M 8,53 A 24,24 0 0,0 44,53" fill="none" />
+      <text font-size="5" font-weight="900" font-family="Arial, Helvetica, sans-serif" text-anchor="middle" fill="#231f20" letter-spacing="0.6">
+        <textPath href="#certCurveBottom" startOffset="50%">CERTIFICATION</textPath>
+      </text>
+
+      <!-- TM mark -->
+      <text x="51" y="60" font-size="4.2" font-weight="900" font-family="Arial, Helvetica, sans-serif" fill="#231f20">TM</text>
+
+      <!-- Horizontal separator bar under globe -->
+      <line x1="2" y1="64" x2="52" y2="64" stroke="#231f20" stroke-width="2.6" stroke-linecap="round" />
+
+      <!-- intertek wordmark (iconic bold lowercase) -->
+      <text x="26" y="73" font-size="11" font-weight="900" font-family="Arial, Helvetica, sans-serif" text-anchor="middle" fill="#231f20" letter-spacing="-0.5">intertek</text>
+    </g>
+
+    <!-- 2. COFRAC Accreditation Badge (Full Colors & Layout Matching Image Exactly) -->
+    <g transform="translate(68, 0)">
+      <!-- Top Wordmark: cofrac in Royal Blue with Underline Bar -->
+      <text x="32" y="10" font-size="12" font-weight="900" font-family="Arial, Helvetica, sans-serif" text-anchor="middle" fill="#005ea8" letter-spacing="0.3">cofrac</text>
+      <rect x="2" y="12" width="60" height="1.6" fill="#005ea8" />
+
+      <!-- Diagonal Hexagons & Stripes Graphic -->
+      <g transform="translate(1, 15)">
+        <!-- Blue stripes & Blue Hexagon -->
+        <!-- Blue stripe 1 -->
+        <polygon points="0,21 5,16 60,1 55,6" fill="#005ea8" />
+        <!-- Blue stripe 2 -->
+        <polygon points="0,27 7,20 60,7 53,14" fill="#005ea8" />
+
+        <!-- Red stripes & Red Hexagon -->
+        <!-- Red stripe 1 -->
+        <polygon points="0,32 10,24 60,14 50,22" fill="#e30613" />
+        <!-- Red stripe 2 -->
+        <polygon points="0,38 12,28 60,18 48,28" fill="#e30613" />
+
+        <!-- Blue Hexagon (Upper Left) -->
+        <polygon points="17,3 27,8 27,20 17,25 7,20 7,8" fill="#ffffff" stroke="#005ea8" stroke-width="2.2" />
+        <!-- Red Hexagon (Lower Right) -->
+        <polygon points="34,10 44,15 44,27 34,32 24,27 24,15" fill="#ffffff" stroke="#e30613" stroke-width="2.2" />
+
+        <!-- Bottom Red Boundary Line -->
+        <rect x="1" y="32" width="60" height="1.6" fill="#e30613" />
+      </g>
+
+      <!-- Red Title: CERTIFICATION DE SYSTEMES DE MANAGEMENT -->
+      <text x="32" y="52" font-size="4.5" font-weight="900" font-family="Arial, Helvetica, sans-serif" text-anchor="middle" fill="#e30613" letter-spacing="0.2">CERTIFICATION</text>
+      <text x="32" y="56.5" font-size="4.5" font-weight="900" font-family="Arial, Helvetica, sans-serif" text-anchor="middle" fill="#e30613" letter-spacing="0.2">DE SYSTEMES</text>
+      <text x="32" y="61" font-size="4.5" font-weight="900" font-family="Arial, Helvetica, sans-serif" text-anchor="middle" fill="#e30613" letter-spacing="0.2">DE MANAGEMENT</text>
+
+      <!-- Black Subtext: ACCRÉDITATION COFRAC N° 4-0641 PORTÉE DISPONIBLE SUR www.cofrac.fr -->
+      <text x="32" y="65" font-size="3.6" font-weight="bold" font-family="Arial, Helvetica, sans-serif" text-anchor="middle" fill="#000000">ACCRÉDITATION</text>
+      <text x="32" y="68" font-size="3.6" font-weight="bold" font-family="Arial, Helvetica, sans-serif" text-anchor="middle" fill="#000000">COFRAC</text>
+      <text x="32" y="71" font-size="3.6" font-weight="bold" font-family="Arial, Helvetica, sans-serif" text-anchor="middle" fill="#000000">N° 4-0641</text>
+      <text x="32" y="74" font-size="3.2" font-weight="bold" font-family="Arial, Helvetica, sans-serif" text-anchor="middle" fill="#000000">PORTÉE</text>
+      <text x="32" y="76.8" font-size="3" font-family="Arial, Helvetica, sans-serif" text-anchor="middle" fill="#000000">DISPONIBLE SUR</text>
+      <text x="32" y="79.5" font-size="3.2" font-weight="bold" font-family="Arial, Helvetica, sans-serif" text-anchor="middle" fill="#000000">www.cofrac.fr</text>
+    </g>
+
+  </g>
+
+  <!-- Upper Section: Middle/Right Contact Information (Centered horizontally in the available space next to the logo) -->
+  <g transform="translate(500, 0)">
+    <text x="0" y="36" font-size="16" class="txt-ar" text-anchor="middle" fill="#000000" dir="rtl">
+      جامعة قاصدي مرباح ورقلة، طريق غرداية، ص ب 511، 30000
+    </text>
+    <text x="0" y="62" font-size="12.5" class="txt-sans" text-anchor="middle" fill="#000000" dir="ltr">
+      / E-mail serviccpere2020@E-mail.dz : Tél : 029-71- 19- 02 / Fax : 029 -71 – 36 – 54
+    </text>
+  </g>
+
+  <!-- Middle Divider Line -->
+  <line x1="1" y1="82" x2="849" y2="82" stroke="#000000" stroke-width="2" />
+
+  <!-- Lower Section: 3 Columns partitioned by vertical dividers -->
+  <line x1="285" y1="82" x2="285" y2="119" stroke="#000000" stroke-width="2" />
+  <line x1="565" y1="82" x2="565" y2="119" stroke="#000000" stroke-width="2" />
+
+  <!-- Box 1 (Left): التاريخ :25/01/2026 -->
+  <text x="142" y="106" font-size="16" class="txt-ar" text-anchor="middle" fill="#000000" dir="rtl">
+    التاريخ :25/01/2026
+  </text>
+
+  <!-- Box 2 (Center): المراجعة :00 -->
+  <text x="425" y="106" font-size="16" class="txt-ar" text-anchor="middle" fill="#000000" dir="rtl">
+    المراجعة :00
+  </text>
+
+  <!-- Box 3 (Right): FOR.GRH.010 -->
+  <text x="705" y="106" font-size="17" class="txt-sans" text-anchor="middle" fill="#000000" dir="ltr">
+    FOR.GRH.010
+  </text>
+</svg>
+
